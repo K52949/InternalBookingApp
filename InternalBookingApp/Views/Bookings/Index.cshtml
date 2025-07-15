@@ -1,0 +1,31 @@
+﻿@model IEnumerable<InternalBookingApp.Models.Booking>
+<h1>Bookings</h1>
+<p><a asp-action="Create" class="btn btn-primary">Create New</a></p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Resource</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+            <th>Booked By</th>
+            <th>Purpose</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Resource?.Name</td>
+                <td>@item.StartTime.ToString("g")</td>
+                <td>@item.EndTime.ToString("g")</td>
+                <td>@item.BookedBy</td>
+                <td>@item.Purpose</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-primary">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

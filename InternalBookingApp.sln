@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35825.156 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "InternalBookingApp", "InternalBookingApp\InternalBookingApp.fsproj", "{9981499F-33B9-4DFD-83AD-F727A79E2BCD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternalBookingApp", "InternalBookingApp\InternalBookingApp.csproj", "{C24659F0-EBBB-4FF7-B305-274C4A24ADF5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9981499F-33B9-4DFD-83AD-F727A79E2BCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9981499F-33B9-4DFD-83AD-F727A79E2BCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9981499F-33B9-4DFD-83AD-F727A79E2BCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9981499F-33B9-4DFD-83AD-F727A79E2BCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C24659F0-EBBB-4FF7-B305-274C4A24ADF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C24659F0-EBBB-4FF7-B305-274C4A24ADF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C24659F0-EBBB-4FF7-B305-274C4A24ADF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C24659F0-EBBB-4FF7-B305-274C4A24ADF5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {87547892-914D-4AF6-B827-125C5FEA8A33}
+		SolutionGuid = {D901E111-ECB5-497E-987F-7147AA3223FB}
 	EndGlobalSection
 EndGlobal

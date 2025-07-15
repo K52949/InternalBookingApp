@@ -1,8 +1,32 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model IEnumerable<InternalBookingApp.Models.Booking>
+<h1>Today's Bookings</h1>
+@if (Model.Any())
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Resource</th>
+                <th>Start Time</th>
+                <th>End Time</th>
+                <th>Booked By</th>
+                <th>Purpose</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Resource?.Name</td>
+                    <td>@item.StartTime.ToString("g")</td>
+                    <td>@item.EndTime.ToString("g")</td>
+                    <td>@item.BookedBy</td>
+                    <td>@item.Purpose</td>
+                </tr>
+            }
+        </tbody>
+    </table>
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+else
+{
+    <p>No bookings for today.</p>
+}
