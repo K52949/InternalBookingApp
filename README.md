@@ -7,7 +7,7 @@
 4. Run `dotnet restore` to install dependencies.
 5. Apply migrations: `dotnet ef database update`.
 6. Run the app: `dotnet run`.
-7. Access at `http://localhost:<port>`.
+7. Access at '.https://github.com/K52949/InternalBookingApp'
 
 ## Features
 - Resource CRUD operations
