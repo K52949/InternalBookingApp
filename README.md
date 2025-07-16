@@ -15,7 +15,7 @@ A web application for managing internal resource bookings, built with ASP.NET Co
    - Use SQL Server Management Studio to restore `BookingApp.bak` to `(localdb)\MSSQLLocalDB`.
    - Alternatively, apply migrations: `dotnet ef database update`
 4. Run the application: `dotnet run`
-5. Access at `http://localhost:<port>`
+5. Access at ('https://github.com/K52949/InternalBookingApp')
 
 ## Features
 - Resource CRUD operations (create, read, update, delete)
